@@ -1,4 +1,4 @@
-reference_text,type
+reference_text,publication_type
 "Smith J. (2015). Deep Learning Advances. Journal of AI, 12(3), 123-130.",Journal Article
 "Brown, A. (2020). Modern Agriculture. Springer.",Book
 "Zimba, M. (2022). Smart Farming in Zambia. MSc Thesis, UNZA.",Thesis
@@ -6,6 +6,5 @@ reference_text,type
 WHO. (2021). Global Health Report. Geneva: WHO.,Report
 "Mwansa, P. (2023). AI overview. Retrieved from https://example.com",Web Resource
 "Johnson, R. (2019). Database Systems. Pearson.",Book
-"Chirwa, B. (2020). The State of Education. Journal of Education, 9(1), 45-67.",Journal Article
 "Ngoma, F. (2021). Mining Safety. PhD Thesis, Copperbelt University.",Thesis
 UNDP. (2017). Zambia Development Report.,Report

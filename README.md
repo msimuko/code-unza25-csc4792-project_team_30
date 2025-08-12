@@ -12,8 +12,10 @@ The model classifies references into the following categories:
 - **Books**: Monographs and edited volumes
 - **Thesis/Dissertations**: Graduate research works
 - **Conference Papers**: Proceedings and presentations
-- **Technical Reports**: Government and institutional publications
+- **Technical Reports / Reports**: Government and institutional publications
 - **Web Resources**: Online publications and documents
+
+> **Note:** The project and app support both "Report" and "Technical Report" as valid types.
 
 ## Tools and Technologies
 - **Python 3.8+**: Primary programming language
@@ -159,6 +161,29 @@ To contribute to this project:
 
 ## Contact
 For questions or support regarding this project, please contact the development team through the course instructor or UNZA CSC department.
+
+---
+
+## Recent Changes
+
+### August 2025
+
+- **Added Streamlit App (`app.py`)**:  
+  Interactive web interface for data management, model training, and prediction.  
+  - View, add, and delete references in `data/references.csv`
+  - Train and evaluate the model (TF-IDF + MultinomialNB)
+  - Classify new references and view confidence scores
+  - Download or open the main Jupyter notebook if available
+
+- **Improved Model Training Robustness**:  
+  The app now checks for class balance before splitting data. If any class has fewer than 2 samples, it uses a random split and warns the user.
+
+- **Confusion Matrix Display**:  
+  The confusion matrix always includes all classes, even if some are missing from the test set.
+
+- **Documentation Updates**:  
+  - Added `doc/project_documentation.md` summarizing project structure and changes.
+  - Updated this README to reflect new features and usage.
 
 ---
 
