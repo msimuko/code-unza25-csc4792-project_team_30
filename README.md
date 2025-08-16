@@ -189,3 +189,31 @@ For questions or support regarding this project, please contact the development 
 
 *Last Updated: August 2025*  
 *CSC 4792 - University of Zambia*
+
+## Data Understanding
+
+The dataset for this project is located in `data/references.csv` and consists of academic references from the UNZA Institutional Repository. Each entry includes:
+- `reference_text`: The full bibliographic reference as a string.
+- `publication_type`: The manually assigned category label (e.g., Journal Article, Book, Thesis, Conference Paper, Report, Web Resource).
+
+**Initial Data Exploration:**
+- The dataset contains 9 references, each labeled with one of six publication types.
+- All entries have both required columns and no missing values.
+- The class distribution is as follows:
+  - Journal Article: 1
+  - Book: 2
+  - Thesis: 2
+  - Conference Paper: 1
+  - Report: 2
+  - Web Resource: 1
+
+**Observations:**
+- The dataset is small and imbalanced, with some classes represented by only one sample.
+- Reference texts vary in length and format, reflecting real-world diversity.
+- No duplicate entries or obvious data quality issues were found.
+- Text preprocessing (see `src/utils.py`) is used to standardize and clean reference strings before modeling.
+
+**Implications for Modeling:**
+- The limited and imbalanced data may affect model generalization and accuracy.
+- Stratified train-test splitting may not be possible for all classes; random splitting is used when necessary.
+- Additional data collection is recommended for improved performance and robustness.
