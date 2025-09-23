@@ -60,35 +60,8 @@ Upload or open project_notebook.ipynb in Google Colab.
 Mount Google Drive
 The notebook will prompt you to mount your Google Drive. Ensure this path exists:
 
-bash
-Copy code
-/content/drive/MyDrive/misc-unza25-csc4792-project_team30/
-Run all cells
 
-Cleans the dataset
-
-Trains and evaluates multiple ML models
-
-Saves outputs (metrics, confusion matrices, trained models)
-
-Outputs generated
-
-Cleaned dataset →
-
-bash
-Copy code
-/outputs/references_cleaned.csv
-Model summary →
-
-bash
-Copy code
-/data/model_evaluation_summary.csv
-Trained models →
-
-bash
-Copy code
-/models/
-🚀 Deployment Usage
+🚀 Deployment Usage of model 
 After training, the Deployment Stage enables classification in two modes:
 
 Option 1 — Demo Mode
