@@ -53,42 +53,41 @@ Copy code
 │     └── vectorizer.pkl
 │── /outputs
 │     └── references_cleaned.csv
+
+
+
 ▶️ Quick Start (Colab)
 Open the notebook
 Upload or open project_notebook.ipynb in Google Colab.
+
 
 Mount Google Drive
 The notebook will prompt you to mount your Google Drive. Ensure this path exists:
 
 
+
+
 🚀 Deployment Usage of model 
 After training, the Deployment Stage enables classification in two modes:
+
+
 
 Option 1 — Demo Mode
 Run with built-in dataset rows to check predictions:
 
-python
-Copy code
-predict_from_demo(sample internal url provided for testing )
-Option 2 — Manual Input (Bitstream URL)
+
+predict_from_demo(sample internal url provided for testing 
+
+
+Option 2 — Manual Input (Bitstream URL
 Paste a PDF or DOCX bitstream URL from UNZA DSpace (or similar).
 
-python
-Copy code
+
 url = "https://dspace.unza.zm/bitstream/handle/123456789/example.pdf"
 predict_from_url(url)
 Output Example:
 
-makefile
-Copy code
-Prediction: Thesis
-Confidence: 0.91
-🧪 Testing Checklist
- Run all notebook cells without error
 
- Verify cleaned dataset is saved in /outputs
-
- Confirm evaluation summary exists in /data
 
  Simply Paste a bitstream URL in the input field  and get a classification result
 
